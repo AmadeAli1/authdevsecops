@@ -10,8 +10,7 @@ import java.security.Principal
 
 @RequestMapping("/api/v1/content/")
 @RestController
-class ContentController {
-
+class ResourceController {
 
     @GetMapping("info")
     suspend fun info(@AuthenticationPrincipal principal: Principal): Info {
